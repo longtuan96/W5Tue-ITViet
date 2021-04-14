@@ -12,7 +12,7 @@ const JobDetail = () => {
   const [singleJob, setSingleJob] = useState(null);
   const { id } = useParams();
   const getSingleJob = async () => {
-    let url = `http://localhost:3001/jobs/${id}`;
+    let url = `https://my-json-server.typicode.com/longtuan96/W5Tue-ITViet/jobs/${id}`;
     const response = await fetch(url);
     const data = await response.json();
     setSingleJob(data);

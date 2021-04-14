@@ -15,7 +15,7 @@ const JobsList = () => {
   console.log("aaa", query.get(QUERYSTR_PREFIX));
   let [keyword, setKeyword] = useState(query.get(QUERYSTR_PREFIX));
   const fetchData = async () => {
-    let url = `http://localhost:3001/jobs`;
+    let url = `https://my-json-server.typicode.com/longtuan96/W5Tue-ITViet/jobs`;
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
