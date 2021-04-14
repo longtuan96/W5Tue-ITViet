@@ -1,38 +1,63 @@
+.container {
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+
+  max-height: 600px;
+  overflow: scroll;
+}
 .App {
+  background-color: rgb(228, 228, 228);
+  width: 100vw;
+  height: 100vh;
+}
+
+.tagBox {
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+  padding: 5px;
+  margin-left: 4px;
+}
+
+.hotJob {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: orange;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.iconJobDetail {
+  width: 30px;
+  height: auto;
+  transform: scale(0.75);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.greyWord {
+  margin: 0;
+  color: grey;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.buttonJobDetail {
+  display: block;
+  background-color: #d21f1c; /* Green */
+  border: none;
   color: white;
+  padding: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  font-size: 16px;
 }
-
-.App-link {
-  color: #61dafb;
+.jobListBox {
+  border-radius: 5px;
+  border: 2px blue solid;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jobListBox:hover {
+  background-color: rgb(255, 237, 215);
+  transition: 0.7s;
 }
